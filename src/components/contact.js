@@ -49,7 +49,8 @@ class Contact extends Component {
 			email: this.state.email,
 			organization: this.state.organization,
 			phone: this.state.phone,
-			message: this.state.message
+			message: this.state.message,
+			type: this.props.formType
 		};
 		try {
 			const result = await axios.post(endpoint, formData);

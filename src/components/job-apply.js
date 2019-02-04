@@ -54,6 +54,7 @@ class JobApply extends Component {
 		formData.append('workExperience', this.state.experience);
 		formData.append('education', this.state.education);
 		formData.append('message', this.state.message);
+		formData.append('type', this.props.formType);
 		const endpoint =
 			'https://getform.io/f/9cc051c4-96c9-45f6-acb2-23d52c39c866';
 		try {

@@ -83,12 +83,18 @@ class IndexPage extends Component {
 			return (
 				<Contact
 					formTitle={this.state.formTitle}
+					formType={this.state.formType}
 					onCancel={this.closeModal.bind(this)}
 				/>
 			);
 		}
 		if (this.state.formType === 'job') {
-			return <JobApply onCancel={this.closeModal.bind(this)} />;
+			return (
+				<JobApply
+					formType={this.state.formType}
+					onCancel={this.closeModal.bind(this)}
+				/>
+			);
 		}
 	}
 
