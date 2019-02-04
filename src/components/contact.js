@@ -42,16 +42,17 @@ class Contact extends Component {
 	async onSubmit(e) {
 		e.preventDefault();
 		this.setState({loading: true});
+		const endpoint =
+			'https://getform.io/f/9cc051c4-96c9-45f6-acb2-23d52c39c866';
 		const formData = {
 			name: this.state.name,
 			email: this.state.email,
 			organization: this.state.organization,
 			phone: this.state.phone,
-			message: this.state.message,
-			'form-name': 'contact'
+			message: this.state.message
 		};
 		try {
-			/* const result = await axios.post('/', formData);
+			const result = await axios.post(endpoint, formData);
 			if (result.status === 200) {
 				this.setState({
 					loading: false,
@@ -62,13 +63,7 @@ class Contact extends Component {
 					loading: false,
 					responseMessage: 'Something went wrong. Please try later.'
 				});
-			} */
-			const result = await fetch('/', {
-				method: 'POST',
-				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-				body: encode(formData)
-			});
-			console.log(result);
+			}
 		} catch (err) {
 			this.setState({
 				loading: false,
@@ -79,11 +74,7 @@ class Contact extends Component {
 
 	renderForm() {
 		return (
-			<form
-				className="form"
-				onSubmit={this.onSubmit.bind(this)}
-				method="POST"
-				data-netlify="true">
+			<form className="form" onSubmit={this.onSubmit.bind(this)} method="POST">
 				<div className="form-field">
 					<label htmlFor="name" className="form-label">
 						Name* (required)
@@ -157,7 +148,6 @@ class Contact extends Component {
 						required
 					/>
 				</div>
-				<input type="hidden" name="form-name" value="contact" />
 				<div className="right-text">
 					<button
 						type="button"

@@ -54,9 +54,10 @@ class JobApply extends Component {
 		formData.append('workExperience', this.state.experience);
 		formData.append('education', this.state.education);
 		formData.append('message', this.state.message);
-		formData.append('form-name', 'job-apply');
+		const endpoint =
+			'https://getform.io/f/9cc051c4-96c9-45f6-acb2-23d52c39c866';
 		try {
-			const result = await axios.post('/', formData);
+			const result = await axios.post(endpoint, formData);
 			if (result.status === 200) {
 				this.setState({
 					loading: false,
@@ -78,10 +79,7 @@ class JobApply extends Component {
 
 	renderForm() {
 		return (
-			<form
-				className="form"
-				data-netlify="true"
-				onSubmit={this.onSubmit.bind(this)}>
+			<form className="form" onSubmit={this.onSubmit.bind(this)}>
 				<div className="form-field">
 					<label htmlFor="name" className="form-label">
 						Name* (required)
@@ -185,7 +183,6 @@ class JobApply extends Component {
 						required
 					/>
 				</div>
-				<input type="hidden" name="form-name" value="job-apply" />
 				<div className="right-text">
 					<button
 						type="button"
