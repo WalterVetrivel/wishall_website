@@ -79,7 +79,11 @@ class Contact extends Component {
 
 	renderForm() {
 		return (
-			<form className="form" method="POST" data-netlify="true">
+			<form
+				className="form"
+				onSubmit={this.onSubmit.bind(this)}
+				method="POST"
+				data-netlify="true">
 				<div className="form-field">
 					<label htmlFor="name" className="form-label">
 						Name* (required)
