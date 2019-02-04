@@ -1,0 +1,25 @@
+#impact {
+	padding: 2.5rem;
+	background-color: #212121;
+	color: #efeeee;
+}
+
+.impact-points {
+	column-count: 2;
+	column-width: 17.5rem;
+	column-gap: 2rem;
+}
+
+.impact-points ul {
+	list-style: none;
+	text-align: justify;
+}
+
+.impact-points ul li {
+	margin-bottom: 1rem;
+}
+
+.impact-points ul li i {
+	margin-right: 0.5rem;
+	color: #f26627;
+}

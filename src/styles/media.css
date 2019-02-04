@@ -1,0 +1,275 @@
+@media (min-width: 450px) {
+    .main-heading {
+        font-size: 1.75rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+    .btn-big {
+        font-size: 1rem;
+        padding: 0.75;
+    }
+    .line {
+        left: 4.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .values {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .value {
+        width: 45%;
+    }
+    .line {
+        left: 4.45rem;
+    }
+    .project__img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    .vision {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1.6rem;
+    }
+    .secondary-heading {
+        font-size: 1.8rem;
+    }
+    .project__details {
+        flex-direction: row;
+    }
+    .project__img {
+        width: 45%;
+    }
+    .project__title {
+        text-align: left;
+    }
+    .project__description {
+        text-align: left;
+    }
+    .action {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    #landing {
+        background-attachment: fixed;
+    }
+    .main-header {
+        padding: 0 7rem;
+        text-align: left;
+    }
+    .main-heading {
+        font-size: 2.25rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+    .btn-big {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .vision {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+    .description {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .values {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .value {
+        width: 25%;
+    }
+    .where-container {
+        display: flex;
+    }
+    .where__map {
+        width: 50%;
+    }
+    .where__text {
+        width: 50%;
+        align-self: center;
+    }
+    .where__text p {
+        text-align: left;
+    }
+}
+
+@media (min-width: 900px) {
+    .navbar__toggle {
+        display: none;
+    }
+    .navbar__nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile__nav,
+    .mobile__nav-display {
+        display: none;
+    }
+    .navbar__items,
+    .navbar__cta {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar__item,
+    .navbar__cta__item {
+        margin: 0.75rem;
+    }
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .intro__desc,
+    .intro__values {
+        padding: 5rem 0;
+    }
+    .value p {
+        font-size: 1.2rem;
+    }
+    .projects-slide {
+        padding: 5rem 3rem;
+    }
+    .project {
+        width: 80%;
+    }
+    .project__img {
+        width: 50%;
+    }
+    #where,
+    #impact,
+    #get-involved {
+        padding: 5rem 3rem;
+    }
+    #donate {
+        padding: 5rem 3rem;
+        flex-direction: row;
+    }
+    .donate__message h2 {
+        font-size: 1.5rem;
+    }
+    .footer {
+        flex-direction: row;
+        text-align: left;
+    }
+    .footer>* {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1080px) {
+    #journey {
+        padding: 5rem 2.5rem;
+    }
+    .timeline {
+        display: flex;
+        align-items: flex-end;
+    }
+    .line {
+        display: none;
+    }
+    .marker {
+        text-align: center;
+        display: block;
+    }
+    .year {
+        width: auto;
+    }
+    .marker i {
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 1rem;
+        transform: translateY(-0.75rem);
+    }
+    .desc {
+        padding: 1.5rem 0.5rem;
+        border-bottom: 2px solid #325d79;
+        border-left: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main-header {
+        text-align: center;
+    }
+    .main-heading {
+        font-size: 3rem;
+    }
+    .vision {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 2rem;
+    }
+    .secondary-heading {
+        font-size: 2.25rem;
+    }
+    .value p {
+        font-size: 1.8rem;
+    }
+    .project {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+    .project__title {
+        font-size: 1.5rem;
+    }
+    .project__description {
+        font-size: 1.4rem;
+    }
+    .impact-points {
+        font-size: 1.25rem;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .action h3 {
+        font-size: 1.5rem;
+    }
+    .tagline {
+        font-size: 1.4rem;
+    }
+    .action p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-height: 450px) and (orientation: landscape) {
+    .main-header {
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .main-heading {
+        font-size: 1.8rem;
+    }
+    .vision,
+    .description {
+        width: 80%;
+    }
+    .vision {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.25rem;
+    }
+}

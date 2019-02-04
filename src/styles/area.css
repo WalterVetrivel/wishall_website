@@ -1,0 +1,28 @@
+#where {
+	padding: 2.5rem;
+}
+
+.where__map {
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.where__map img {
+	width: 100%;
+	display: block;
+}
+
+.where__text p {
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.where__text dt {
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.where__text dd {
+	margin-bottom: 1rem;
+}

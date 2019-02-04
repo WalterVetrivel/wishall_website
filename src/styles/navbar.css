@@ -1,0 +1,125 @@
+.navbar {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #efeeee;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.navbar__logo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.navbar__logo img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar__nav {
+    display: none;
+}
+
+.navbar__items,
+.navbar__cta {
+    list-style: none;
+    flex-direction: column;
+}
+
+.navbar__link,
+.navbar__cta__link {
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #f26627;
+    transition: all 0.3s ease-in;
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+}
+
+.navbar-sticky .navbar__link::after {
+    background-color: #325d79;
+}
+
+.navbar__cta__link {
+    color: #efeeee;
+}
+
+.navbar__cta__main {
+    background-color: #325d79;
+    padding: 0.75rem;
+}
+
+.navbar__cta__secondary {
+    background-color: #f26627;
+    padding: 0.75rem;
+}
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #efeeee;
+    color: #212121;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.navbar__toggle {
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border: 0;
+    padding: 0 0.5rem;
+    border: 1px solid #325d79;
+    background-color: inherit;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.navbar__toggle div {
+    height: 2px;
+    background-color: #325d79;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.mobile__nav {
+    display: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.mobile__nav .navbar__item,
+.mobile__nav .navbar__link,
+.mobile__nav .navbar__cta__item,
+.mobile__nav .navbar__cta__link {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.mobile__nav .navbar__link {
+    color: inherit;
+}
+
+.mobile__nav-display {
+    display: block;
+}
