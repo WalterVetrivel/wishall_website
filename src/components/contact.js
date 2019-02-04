@@ -2,6 +2,12 @@ import React, {Fragment, Component} from 'react';
 import Spinner from './spinner';
 import axios from 'axios';
 
+function encode(data) {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		.join('&');
+}
+
 class Contact extends Component {
 	state = {
 		name: '',
@@ -45,7 +51,7 @@ class Contact extends Component {
 			'form-name': 'contact'
 		};
 		try {
-			const result = await axios.post('/', formData);
+			/* const result = await axios.post('/', formData);
 			if (result.status === 200) {
 				this.setState({
 					loading: false,
@@ -56,7 +62,13 @@ class Contact extends Component {
 					loading: false,
 					responseMessage: 'Something went wrong. Please try later.'
 				});
-			}
+			} */
+			const result = await fetch('/', {
+				method: 'POST',
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+				body: encode(formData)
+			});
+			console.log(result);
 		} catch (err) {
 			this.setState({
 				loading: false,
@@ -67,10 +79,7 @@ class Contact extends Component {
 
 	renderForm() {
 		return (
-			<form
-				className="form"
-				data-netlify="true"
-				onSubmit={this.onSubmit.bind(this)}>
+			<form className="form" method="POST" data-netlify="true">
 				<div className="form-field">
 					<label htmlFor="name" className="form-label">
 						Name* (required)
