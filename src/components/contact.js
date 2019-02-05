@@ -75,7 +75,7 @@ class Contact extends Component {
 
 	renderForm() {
 		return (
-			<form className="form" onSubmit={this.onSubmit.bind(this)} method="POST">
+			<form name="contact" className="form" data-netlify="true" method="POST">
 				<div className="form-field">
 					<label htmlFor="name" className="form-label">
 						Name* (required)
@@ -149,6 +149,7 @@ class Contact extends Component {
 						required
 					/>
 				</div>
+				<input type="hidden" name="form-type" value={this.props.formType} />
 				<div className="right-text">
 					<button
 						type="button"
