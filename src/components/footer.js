@@ -11,27 +11,22 @@ const Footer = props => (
 			<h3>Links</h3>
 			<ul className="footer__links">
 				<li>
-					<a href="#" className="footer__link">
+					<a href="#intro" className="footer__link">
 						About
 					</a>
 				</li>
 				<li>
-					<a href="#" className="footer__link">
+					<a href="#projects" className="footer__link">
 						Our Projects
 					</a>
 				</li>
 				<li>
-					<a href="#" className="footer__link">
+					<a href="#where" className="footer__link">
 						Where We Work
 					</a>
 				</li>
 				<li>
-					<a href="#" className="footer__link">
-						Resources
-					</a>
-				</li>
-				<li>
-					<a href="#" className="footer__link">
+					<a href="#get-involved" className="footer__link">
 						Get Involved
 					</a>
 				</li>

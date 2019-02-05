@@ -39,9 +39,11 @@ const MobileNav = props => (
 					</a>
 				</li>
 				<li className="navbar__cta__item">
-					<a href="#" className="navbar__cta__link navbar__cta__secondary">
+					<button
+						onClick={props.onContact}
+						className="navbar__cta__link navbar__cta__secondary">
 						Contact Us
-					</a>
+					</button>
 				</li>
 			</ul>
 		</div>

@@ -47,7 +47,7 @@ const Navbar = props => (
 				</li>
 			</ul>
 		</div>
-		<MobileNav />
+		<MobileNav onContact={props.onContact} />
 	</nav>
 );
 
