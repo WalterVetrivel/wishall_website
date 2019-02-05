@@ -149,6 +149,7 @@ class Contact extends Component {
 						required
 					/>
 				</div>
+				<input type="hidden" name="form-name" value="contact" />
 				<input type="hidden" name="form-type" value={this.props.formType} />
 				<div className="right-text">
 					<button
