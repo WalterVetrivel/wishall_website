@@ -65,6 +65,10 @@
     #landing {
         background-attachment: fixed;
     }
+    .navbar__logo {
+        width: 4rem;
+        height: 4rem;
+    }
     .main-header {
         padding: 0 7rem;
         text-align: left;
@@ -177,6 +181,10 @@
 }
 
 @media (min-width: 1080px) {
+    .navbar__logo {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
     #journey {
         padding: 5rem 2.5rem;
     }
